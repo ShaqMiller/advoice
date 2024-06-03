@@ -1,0 +1,8 @@
+$primary-color: #1f663d;
+$accent-color:#661f4b;
+$bg-color:#1e1e1e;
+
+:export {
+  primaryColor: $primary-color;
+  bgColor: $bg-color;
+}

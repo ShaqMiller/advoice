@@ -1,0 +1,95 @@
+$login-color: $primary-color;
+$signup-color: $primary-color;
+$nav-color:white;
+.container{
+    display: flex;
+    padding: 1rem 2rem;
+    color: $nav-color;
+    justify-content: space-between;
+    height: 4vh;
+}
+
+.leftSection{
+    display: flex;
+    .title{
+        font-size: 1.8rem;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        
+    }
+    
+    .navContainer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 3rem;
+        .nav{
+            font-size: 1rem;
+            margin: 0 0.5rem;
+    
+            &:hover{
+                cursor: pointer;
+                color: darken($nav-color, 10);
+            }
+        }
+        
+    }
+    
+    .signupBut{
+        color: $signup-color;
+        border-radius: 2px;
+        text-align: center;
+        font-weight:700 ;
+        &:hover{
+            cursor: pointer;
+            color: darken($signup-color, 10) !important;
+        }
+    }
+    
+    
+    .loginBut{
+        color: $login-color;
+        border-radius: 2px;
+        text-align: center;
+        font-weight:700 ;
+        &:hover{
+            cursor: pointer;
+            color: darken($login-color, 10)!important;
+        }
+    }
+    
+}
+
+
+
+
+.searchContainer{
+    display: flex;
+    position: relative;
+    input{
+        border: none;
+        color: white;
+        border-radius: 25px;
+        background-color: rgba(255, 255, 255, 0.055);
+        outline: none;
+        font-size: 1rem;
+        width: 10rem;
+        height: 1.4rem;
+        padding: 0.5rem 0.5rem;
+        &::placeholder{
+            color: white;
+        }
+        font-size: 0.9rem;
+    }
+
+    .searchBut{
+        position: absolute;
+        height: 90%;
+        aspect-ratio: 1;
+        top: 50%;
+        right: 0;
+        transform: translate(0,-50%);
+        background-color: white;
+        border-radius: 50%;
+    }
+}
