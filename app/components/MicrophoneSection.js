@@ -72,8 +72,10 @@ export default function MicrophoneContent(){
 
             <div className={styles.introContainer}>
                 <div className={styles.introText}>Empowering Advice, Every Day</div>
-                <div className={styles.introText}>Advice that <span className={styles.highlight}>Inspires</span> Change</div>
+                <div className={styles.introText}>Advice that <span className={styles.highlight}>Inspires</span> Change.</div>
             </div>
+
+            
         </div>
     )
 }
